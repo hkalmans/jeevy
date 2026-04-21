@@ -106,14 +106,18 @@ export default function Home() {
     <main className={styles.page}>
       <section className={styles.hero}>
         <div className={styles.heroVideo} aria-hidden="true">
-          <iframe
-            src="https://www.youtube.com/embed/yS6gCBurz88?autoplay=1&mute=1&controls=0&loop=1&playlist=yS6gCBurz88&playsinline=1&rel=0&modestbranding=1"
-            title="Welder with sparks flying"
-            allow="autoplay; encrypted-media; picture-in-picture"
-            referrerPolicy="strict-origin-when-cross-origin"
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
             loading="lazy"
-            style={{objectFit: 'cover'}}
-          />
+            className={styles.backgroundVideo}
+          >
+            <source src="/welding-sparks.mp4" type="video/mp4" />
+            <source src="/welding-sparks.webm" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
         </div>
         <div className={styles.heroShade} />
         <div className={styles.heroGrid} />

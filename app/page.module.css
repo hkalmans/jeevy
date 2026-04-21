@@ -29,6 +29,7 @@
   inset: 0;
 }
 
+.backgroundVideo,
 .heroVideo iframe,
 .motionVideo iframe {
   position: absolute;
@@ -42,6 +43,7 @@
   pointer-events: none;
   opacity: 0.56;
   filter: grayscale(0.15) contrast(1.1) brightness(0.42) saturate(0.72);
+  object-fit: cover;
 }
 
 .heroShade {
