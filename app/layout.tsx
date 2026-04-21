@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jeevy | AI Fabrication Contractor",
+  title: "Jeevy Systems | Welding Execution Software",
   description:
-    "Jeevy combines fabrication execution, scheduling, QA, and shop automation for aerospace and industrial welded work.",
+    "Jeevy Systems helps industrial teams manage welded work with clearer scheduling, QA visibility, and execution software on their timeline.",
 };
 
 export default function RootLayout({
