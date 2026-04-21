@@ -130,13 +130,13 @@
 
 .logoText strong {
   font-size: clamp(3.6rem, 4.8vw, 5.76rem);
-  letter-spacing: -0.08em;
+  letter-spacing: clamp(0.02em, -0.08em + 2vw, 0.08em);
   color: var(--text-main);
 }
 
 .logoText span {
   color: var(--text-main);
-  letter-spacing: -0.08em;
+  letter-spacing: clamp(0.02em, -0.08em + 2vw, 0.08em);
   font-size: clamp(3.6rem, 4.8vw, 5.76rem);
   font-weight: 700;
 }
@@ -224,7 +224,7 @@
 
 .statCard {
   padding: 1.4rem;
-  background: rgba(70, 70, 70, 0.85);
+  background: rgba(18, 18, 18, 0.85);
   text-align: left;
 }
 
@@ -299,7 +299,7 @@
   justify-content: flex-start;
   gap: 0.9rem;
   color: var(--text-main);
-  background: rgba(70, 70, 70, 0.85);
+  background: rgba(18, 18, 18, 0.85);
 }
 
 .offeringIndex {
@@ -395,7 +395,7 @@
   flex-direction: column;
   gap: 0.5rem;
   padding: 1rem;
-  background: rgba(70, 70, 70, 0.85);
+  background: rgba(18, 18, 18, 0.85);
   border: 1px solid rgba(163, 183, 169, 0.12);
   backdrop-filter: blur(10px);
 }

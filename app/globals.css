@@ -1,6 +1,6 @@
 :root {
-  --bg: #060a08;
-  --panel: rgba(50, 50, 50, 0.95);
+  --bg: #000000;
+  --panel: rgba(18, 18, 18, 0.95);
   --line: rgba(163, 183, 169, 0.14);
   --line-strong: rgba(163, 183, 169, 0.28);
   --text-main: #edf1eb;
@@ -23,9 +23,7 @@ body {
 body {
   min-height: 100%;
   color: var(--text-main);
-  background:
-    radial-gradient(circle at top, rgba(0, 31, 63, 0.16), transparent 18%),
-    linear-gradient(180deg, #1a1a1a 0%, #0f0f0f 55%, #0a0a0a 100%);
+  background: #000000;
   font-family: var(--font-geist-sans), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
