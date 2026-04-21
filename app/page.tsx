@@ -1,91 +1,111 @@
 import styles from "./page.module.css";
 
-const metrics = [
+const heroStats = [
   { value: "80%+", label: "less bid and scheduling time for in-network shops" },
   { value: "24/7", label: "client visibility into schedules, documents, and updates" },
-  { value: "6", label: "core industrial workload categories on day one" },
+  { value: "6", label: "industrial workload categories already represented publicly" },
 ];
 
-const productCards = [
+const offerings = [
   {
-    eyebrow: "01 / Fabrication Contractor",
-    title: "AI-driven EPC for welded assemblies",
+    id: "fabrication",
+    label: "AI Fabrication Contractor",
+    title: "Own the welded job from sourcing through delivery.",
     description:
-      "Jeevy connects complex weld jobs to best-fit shops, manages execution end-to-end, and gives customers higher QA rigor and schedule transparency without the normal outsourcing chaos.",
-    bullets: [
-      "Best-fit shop allocation",
-      "Purchasing and project coordination",
-      "Customer-facing schedule visibility",
+      "Jeevy Fabrication acts as an AI-driven contractor for complex welded assemblies. It routes work to best-fit shops, coordinates purchasing and milestones, and gives clients a cleaner buying experience with schedules, documents, traceability, and updates in one place.",
+    details: [
+      "Best-fit shop allocation and scheduling",
+      "Higher QA rigor with end-to-end ownership",
+      "Project tracking, traceability, and material review",
     ],
+    mediaTitle: "Fabrication execution",
+    mediaBody:
+      "Built to make outsourced welded work feel closer to an in-house program: visible, structured, and schedule-aware.",
+    imageUrl: "https://jeevyfabrication.com/wp-content/uploads/2025/10/hp_manifold.webp",
+    imageAlt: "Industrial manifold fabrication from Jeevy Fabrication",
   },
   {
-    eyebrow: "02 / Automation System",
-    title: "A weld-shop operating layer",
+    id: "automation",
+    label: "Jeevy Automation",
+    title: "Turn drawings into execution data that shops can actually use.",
     description:
-      "The automation layer turns drawings into a bill of materials, resource-loaded schedules, documentation flows, and structured shop execution data that teams can actually act on.",
-    bullets: [
-      "Drawing to BOM and schedule",
-      "Documentation and traceability",
-      "Operational signal from the floor",
+      "The automation layer converts manufacturing drawings into an accurate bill of materials, a resource-loaded high-fidelity schedule, documentation flows, and operational structure. It is meant to reduce the hidden engineering burden that slows smaller weld shops down.",
+    details: [
+      "Drawing to BOM and high-fidelity schedule",
+      "Documentation and shop coordination flows",
+      "Fewer errors, less rework, better throughput",
     ],
+    mediaTitle: "Automation system",
+    mediaBody:
+      "Less spreadsheet glue. More real production signal. Better scheduling, cleaner handoffs, and fewer misses.",
+    imageUrl: "https://jeevyfabrication.com/wp-content/uploads/2025/10/2-2-1024x576.jpg",
+    imageAlt: "Welding and fabrication work in progress",
   },
   {
-    eyebrow: "03 / Reliability Stack",
-    title: "Quality, safety, and schedule control",
+    id: "services",
+    label: "Industrial Services",
+    title: "Support high-stakes industrial programs with quality and safety discipline.",
     description:
-      "Jeevy's public fabrication positioning emphasizes workmanship, QA, safety seriousness, and industrial delivery discipline for aerospace, defense, energy, and data center work.",
-    bullets: [
-      "High-fidelity scheduling",
-      "Risk analysis and document tracking",
-      "Quality and safety built into the process",
+      "Public Jeevy Fabrication materials emphasize top-class workmanship, quality focus, safety seriousness, and industrial support for aerospace, field install, steel manufacturing, tooling, and data center work. This is the credibility layer that makes the software story believable.",
+    details: [
+      "Quality-centered execution and QA policy alignment",
+      "Safety treated seriously across the organization",
+      "Capabilities spanning aerospace, energy, steel, and data center scopes",
     ],
+    mediaTitle: "Industrial support",
+    mediaBody:
+      "Not just software theater. A delivery posture rooted in real welded hardware, project controls, and field execution.",
+    imageUrl: "https://jeevyfabrication.com/wp-content/uploads/2025/10/jeevy-team.jpg",
+    imageAlt: "Jeevy Fabrication team in the shop",
   },
 ];
 
 const workloads = [
-  "Aerospace piping and skid assemblies",
-  "Custom engineered fabrications",
-  "Tooling design and manufacturing support equipment",
-  "Field fabrication and install",
-  "Steel manufacturing",
-  "Data center engineering and install",
+  {
+    icon: "AP",
+    title: "Aerospace Piping and Skid Assemblies",
+    description: "High-consequence piping, fluid systems, and skid builds where cleanliness, spec discipline, and schedule rigor matter.",
+  },
+  {
+    icon: "CF",
+    title: "Custom Engineered Fabrications",
+    description: "One-off or specialized fabrications that need stronger coordination than generic job-shop quoting usually provides.",
+  },
+  {
+    icon: "TD",
+    title: "Tooling Design",
+    description: "Manufacturing support equipment and purpose-built tooling for teams trying to move faster without losing control.",
+  },
+  {
+    icon: "FI",
+    title: "Field Fabrication and Install",
+    description: "Execution support for on-site industrial work where documentation, sequencing, and communication become critical.",
+  },
+  {
+    icon: "SM",
+    title: "Steel Manufacturing",
+    description: "Heavier industrial steel work that benefits from better planning, workload visibility, and structured delivery management.",
+  },
+  {
+    icon: "DC",
+    title: "Data Center Engineering & Install",
+    description: "Fast-moving infrastructure scopes where schedule clarity and reliable fabrication partners matter materially.",
+  },
 ];
 
-const operatingModel = [
-  {
-    label: "Capture",
-    detail:
-      "Process one drawing into the schedule, test plan, QA flow, and commercial assumptions that smaller shops rarely have time to build consistently.",
-  },
-  {
-    label: "Route",
-    detail:
-      "Match jobs to shops with the right capability and available capacity so throughput does not collapse under bid load or resourcing noise.",
-  },
-  {
-    label: "Execute",
-    detail:
-      "Track milestones, material review, domestic content needs, and customer documentation from kickoff through final delivery.",
-  },
-  {
-    label: "Verify",
-    detail:
-      "Use rigorous QA habits, inspection discipline, and routine operational controls to reduce delays, rework, and blind spots.",
-  },
-];
-
-const proofPoints = [
-  "Public site positioning emphasizes top-class workmanship for aerospace engineers and industrial innovators.",
-  "YC copy frames the product as an AI-powered contractor for complex welded assemblies with total transparency.",
-  "Fabrication capabilities span aerospace, defense, energy, field install, tooling, and data center engineering work.",
-  "Quality language centers on minimizing downtime, reducing risk, and improving safety in aerospace fabrication.",
+const fabricationFacts = [
+  "Reshaping the Future of Industrial Innovation",
+  "Top-class workmanship to support engineers and the technologies they innovate",
+  "Quality is defined as delivering precisely what the client desires",
+  "Safety is treated with the utmost seriousness across the organization",
+  "Committed to environmental responsibilities focused on local communities and the globe alike",
 ];
 
 export default function Home() {
   return (
     <main className={styles.page}>
       <section className={styles.hero}>
-        <div className={styles.heroMedia} aria-hidden="true">
+        <div className={styles.heroVideo} aria-hidden="true">
           <iframe
             src="https://www.youtube.com/embed/yS6gCBurz88?autoplay=1&mute=1&controls=0&loop=1&playlist=yS6gCBurz88&playsinline=1&rel=0&modestbranding=1"
             title="Welder with sparks flying"
@@ -93,162 +113,183 @@ export default function Home() {
             referrerPolicy="strict-origin-when-cross-origin"
           />
         </div>
+        <div className={styles.heroShade} />
+        <div className={styles.heroGrid} />
 
-        <div className={styles.heroScrim} />
-
-        <div className={styles.heroTop}>
-          <p className={styles.brand}>JEEVY</p>
+        <header className={styles.heroTop}>
+          <p className={styles.brand}>JEEVY SYSTEMS</p>
           <nav className={styles.nav}>
             <a href="#product">Product</a>
             <a href="#workloads">Workloads</a>
-            <a href="#system">System</a>
-            <a href="#proof">Proof</a>
+            <a href="#fabrication-data">Fabrication</a>
+            <a href="mailto:jeevy@jeevyfabrication.com">Contact</a>
           </nav>
-        </div>
+        </header>
 
-        <div className={styles.heroBody}>
-          <div className={styles.heroCopy}>
-            <p className={styles.eyebrow}>AI FABRICATION CONTRACTOR / WELD SHOP SYSTEM</p>
-            <h1>Industrial execution software for teams building welded hardware under real schedule pressure.</h1>
-            <p className={styles.heroText}>
-              Jeevy combines contractor-grade fabrication execution with automation for quoting, scheduling,
-              documentation, QA, and shop coordination. The result is a system that helps aerospace and industrial
-              teams buy, track, and deliver complex welded work with more reliability and less operational drag.
-            </p>
-            <div className={styles.heroActions}>
-              <a href="mailto:jeevy@jeevyfabrication.com" className={styles.primaryAction}>
-                Contact Jeevy
-              </a>
-              <a href="#product" className={styles.secondaryAction}>
-                Read the system
-              </a>
+        <div className={styles.heroCenter}>
+          <div className={styles.logoLockup}>
+            <div className={styles.logoMark}>
+              <span>J</span>
+            </div>
+            <div className={styles.logoText}>
+              <strong>JEEVY</strong>
+              <span>SYSTEMS</span>
             </div>
           </div>
 
-          <div className={styles.heroStack}>
-            <div className={styles.statusPanel}>
-              <p className={styles.panelLabel}>Current Positioning</p>
-              <strong>Build team for aerospace engineers</strong>
-              <span>
-                AI-driven fabrication contractor + weld shop automation + industrial services capability under one
-                operating model.
-              </span>
-            </div>
+          <p className={styles.tagline}>Welding Execution Software on Your Timeline</p>
 
-            <div className={styles.stackGrid}>
-              {metrics.map((metric) => (
-                <div key={metric.label} className={styles.metricCard}>
-                  <strong>{metric.value}</strong>
-                  <span>{metric.label}</span>
-                </div>
-              ))}
-            </div>
+          <div className={styles.heroButtons}>
+            <a href="#product" className={styles.primaryButton}>
+              Explore Products
+            </a>
+            <a href="#fabrication-data" className={styles.secondaryButton}>
+              See Fabrication Capabilities
+            </a>
+          </div>
+
+          <div className={styles.heroStats}>
+            {heroStats.map((stat) => (
+              <article key={stat.label} className={styles.statCard}>
+                <strong>{stat.value}</strong>
+                <span>{stat.label}</span>
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
       <section className={styles.section} id="product">
         <div className={styles.sectionHeading}>
-          <p className={styles.eyebrow}>Product Description</p>
-          <h2>Three public faces, one operating system.</h2>
+          <p className={styles.kicker}>Product Description</p>
+          <h2>Three offers. One industrial operating layer.</h2>
           <p>
-            This page synthesizes Jeevy Fabrication, Jeevy Automation, and YC's public company description into one
-            tighter product story: software plus execution for critical welded work.
+            The goal is not just to look technical. It is to sell a believable industrial system: contractor execution,
+            weld-shop automation, and services capability tied together into one clearer buying story.
           </p>
         </div>
 
-        <div className={styles.cardGrid}>
-          {productCards.map((card) => (
-            <article key={card.title} className={styles.blackCard}>
-              <p className={styles.cardEyebrow}>{card.eyebrow}</p>
-              <h3>{card.title}</h3>
-              <p>{card.description}</p>
-              <ul className={styles.bulletList}>
-                {card.bullets.map((bullet) => (
-                  <li key={bullet}>{bullet}</li>
-                ))}
-              </ul>
-            </article>
-          ))}
+        <div className={styles.offeringsLayout}>
+          <aside className={styles.offeringsRail}>
+            {offerings.map((offering, index) => (
+              <a key={offering.id} href={`#${offering.id}`} className={styles.offeringButton}>
+                <span className={styles.offeringIndex}>0{index + 1}</span>
+                <span>{offering.label}</span>
+              </a>
+            ))}
+          </aside>
+
+          <div className={styles.offeringsContent}>
+            {offerings.map((offering) => (
+              <article key={offering.id} id={offering.id} className={styles.offeringCard}>
+                <div className={styles.offeringText}>
+                  <p className={styles.cardKicker}>{offering.label}</p>
+                  <h3>{offering.title}</h3>
+                  <p>{offering.description}</p>
+                  <ul className={styles.detailList}>
+                    {offering.details.map((detail) => (
+                      <li key={detail}>{detail}</li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className={styles.offeringMedia}>
+                  <img src={offering.imageUrl} alt={offering.imageAlt} className={styles.offeringImage} />
+                  <div className={styles.mediaGlow} />
+                  <div className={styles.mediaPanel}>
+                    <p className={styles.cardKicker}>{offering.mediaTitle}</p>
+                    <p>{offering.mediaBody}</p>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
       <section className={styles.section} id="workloads">
         <div className={styles.sectionHeading}>
-          <p className={styles.eyebrow}>Workloads</p>
-          <h2>Designed for the work already visible in Jeevy's fabrication footprint.</h2>
-          <p>
-            Public-facing fabrication capabilities point to a broad but coherent workload set: aerospace piping,
-            engineered fabrications, tooling, field install, steel work, and data center projects.
-          </p>
+          <p className={styles.kicker}>Workloads</p>
+          <h2>Industrial scopes the product is already positioned to support.</h2>
         </div>
 
         <div className={styles.workloadGrid}>
-          {workloads.map((workload, index) => (
-            <article key={workload} className={styles.workloadCard}>
-              <span className={styles.workloadIndex}>0{index + 1}</span>
-              <h3>{workload}</h3>
+          {workloads.map((workload) => (
+            <article key={workload.title} className={styles.workloadCard}>
+              <div className={styles.workloadIcon}>{workload.icon}</div>
+              <h3>{workload.title}</h3>
+              <p>{workload.description}</p>
             </article>
           ))}
         </div>
       </section>
 
-      <section className={styles.section} id="system">
-        <div className={styles.sectionHeading}>
-          <p className={styles.eyebrow}>Operating System</p>
-          <h2>From drawing intake to verified delivery.</h2>
-          <p>
-            YC's public description highlights where the real leverage comes from: converting manufacturing inputs into
-            schedules, documentation, and execution decisions quickly enough to make small shops behave like
-            higher-rigor operators.
-          </p>
-        </div>
-
-        <div className={styles.systemGrid}>
-          {operatingModel.map((item) => (
-            <article key={item.label} className={styles.systemCard}>
-              <p className={styles.cardEyebrow}>{item.label}</p>
-              <p>{item.detail}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className={styles.section} id="proof">
-        <div className={styles.sectionHeading}>
-          <p className={styles.eyebrow}>Public Proof</p>
-          <h2>What the current public material already says.</h2>
-        </div>
-
-        <div className={styles.proofPanel}>
-          <div className={styles.proofColumn}>
-            <h3>Why it matters</h3>
+      <section className={styles.section}>
+        <div className={styles.motionBand}>
+          <div className={styles.motionVideo} aria-hidden="true">
+            <iframe
+              src="https://www.youtube.com/embed/yS6gCBurz88?autoplay=1&mute=1&controls=0&loop=1&playlist=yS6gCBurz88&playsinline=1&rel=0&modestbranding=1"
+              title="Welding sparks motion background"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              referrerPolicy="strict-origin-when-cross-origin"
+            />
+          </div>
+          <div className={styles.motionShade} />
+          <div className={styles.motionText}>
+            <p className={styles.kicker}>Execution Layer</p>
+            <h2>More patient pacing. More proof. More visual action.</h2>
             <p>
-              The consistent thread across the public material is reliability: higher workmanship, stronger QA,
-              visibility into execution, and more disciplined schedule control for hard-to-source industrial jobs.
+              The revised structure slows the reader down in the right way: centered identity first, then products,
+              then workloads, then the underlying fabrication business that makes the system credible.
             </p>
           </div>
-          <div className={styles.proofColumn}>
-            <ul className={styles.bulletList}>
-              {proofPoints.map((point) => (
-                <li key={point}>{point}</li>
-              ))}
-            </ul>
-          </div>
         </div>
       </section>
 
-      <section className={styles.ctaSection}>
-        <div className={styles.ctaCard}>
-          <p className={styles.eyebrow}>Jeevy Fabrication / Jeevy Automation</p>
-          <h2>Technological on the surface. Industrial at the core.</h2>
+      <section className={styles.section} id="fabrication-data">
+        <div className={styles.sectionHeading}>
+          <p className={styles.kicker}>Jeevy Fabrication</p>
+          <h2>Public fabrication information from the current Jeevy site.</h2>
           <p>
-            If the direction feels right, the next pass should be brand cleanup: final messaging, real contact flow,
-            and a proper media asset instead of the temporary embedded hero video.
+            This section intentionally mirrors the live fabrication business more directly: industrial innovation,
+            service capabilities, quality focus, safety seriousness, and contact details.
           </p>
-          <a href="mailto:jeevy@jeevyfabrication.com" className={styles.primaryAction}>
-            Talk with Jeevy
-          </a>
+        </div>
+
+        <div className={styles.fabricationGrid}>
+          <article className={styles.fabricationCard}>
+            <h3>What the site says</h3>
+            <ul className={styles.detailList}>
+              {fabricationFacts.map((fact) => (
+                <li key={fact}>{fact}</li>
+              ))}
+            </ul>
+          </article>
+
+          <article className={styles.fabricationCard}>
+            <h3>Service Capabilities</h3>
+            <ul className={styles.detailList}>
+              <li>Aerospace piping and skid assemblies</li>
+              <li>Custom engineered fabrications</li>
+              <li>Tooling design</li>
+              <li>Field fabrication and install</li>
+              <li>Steel manufacturing</li>
+              <li>Data center engineering and install</li>
+            </ul>
+          </article>
+
+          <article className={styles.fabricationCard}>
+            <h3>Find Us</h3>
+            <div className={styles.contactBlock}>
+              <p>4505 County Road 312B</p>
+              <p>Cleburne, TX 76031</p>
+              <p>682-317-9998</p>
+              <p>jeevy@jeevyfabrication.com</p>
+            </div>
+            <a href="mailto:jeevy@jeevyfabrication.com" className={styles.primaryButton}>
+              Contact Jeevy
+            </a>
+          </article>
         </div>
       </section>
     </main>
