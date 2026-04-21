@@ -310,8 +310,8 @@ export default function Home() {
           </div>
           <div className={styles.footerSection}>
             <a href="#app">App</a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://x.com/jeevyfab" target="_blank" rel="noopener noreferrer">X</a>
+            <a href="https://www.linkedin.com/company/jeevy-fabrication/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
         <div className={styles.footerBrand}>JEEVY SYSTEMS</div>
