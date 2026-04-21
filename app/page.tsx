@@ -133,9 +133,6 @@ export default function Home() {
 
         <div className={styles.heroCenter}>
           <div className={styles.logoLockup}>
-            <div className={styles.logoMark}>
-              <span>J</span>
-            </div>
             <div className={styles.logoText}>
               <strong>JEEVY</strong>
               <span>SYSTEMS</span>
