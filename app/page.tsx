@@ -128,7 +128,6 @@ export default function Home() {
             <a href="#workloads">Workloads</a>
             <a href="#fabrication-data">Fabrication</a>
             <a href="mailto:jeevy@jeevyfabrication.com">Contact</a>
-            <a href="#portal" className={styles.portalButton}>Portal Login</a>
           </nav>
         </header>
 
@@ -300,6 +299,23 @@ export default function Home() {
           </article>
         </div>
       </section>
+
+      <footer className={styles.footer}>
+        <div className={styles.footerContent}>
+          <div className={styles.footerSection}>
+            <a href="mailto:jeevy@jeevyfabrication.com">Contacts</a>
+            <a href="#careers">Careers</a>
+            <a href="#blog">Blog</a>
+            <a href="#customers">Customers</a>
+          </div>
+          <div className={styles.footerSection}>
+            <a href="#app">App</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+        <div className={styles.footerBrand}>JEEVY SYSTEMS</div>
+      </footer>
     </main>
   );
 }

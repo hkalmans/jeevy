@@ -1,12 +1,12 @@
 :root {
   --bg: #060a08;
-  --panel: rgba(8, 15, 12, 0.9);
+  --panel: rgba(50, 50, 50, 0.95);
   --line: rgba(163, 183, 169, 0.14);
   --line-strong: rgba(163, 183, 169, 0.28);
   --text-main: #edf1eb;
   --text-muted: #a3b7a9;
-  --accent: #11543f;
-  --tertiary: #5a1d1c;
+  --accent: #001F3F;
+  --tertiary: #CC0000;
 }
 
 html {
@@ -24,8 +24,8 @@ body {
   min-height: 100%;
   color: var(--text-main);
   background:
-    radial-gradient(circle at top, rgba(17, 84, 63, 0.16), transparent 18%),
-    linear-gradient(180deg, #040806 0%, #09100d 55%, #0b1310 100%);
+    radial-gradient(circle at top, rgba(0, 31, 63, 0.16), transparent 18%),
+    linear-gradient(180deg, #1a1a1a 0%, #0f0f0f 55%, #0a0a0a 100%);
   font-family: var(--font-geist-sans), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -38,7 +38,7 @@ body {
 }
 
 *::selection {
-  background: rgba(17, 84, 63, 0.36);
+  background: rgba(0, 31, 63, 0.36);
 }
 
 a {
