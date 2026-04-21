@@ -111,7 +111,6 @@ export default function Home() {
             muted
             loop
             playsInline
-            loading="lazy"
             className={styles.backgroundVideo}
           >
             <source src="/welding-sparks.mp4" type="video/mp4" />
