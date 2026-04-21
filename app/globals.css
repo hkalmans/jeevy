@@ -1,14 +1,12 @@
 :root {
-  --bg: #050505;
-  --panel: rgba(10, 10, 10, 0.88);
-  --line: rgba(255, 255, 255, 0.1);
-  --line-strong: rgba(255, 255, 255, 0.24);
-  --text-main: #ece7df;
-  --text-inverse: #f8f4ed;
-  --text-dim: #b0a89c;
-  --text-muted: #8a8278;
-  --accent: #f59c28;
-  --accent-soft: #8f6a2a;
+  --bg: #060a08;
+  --panel: rgba(8, 15, 12, 0.9);
+  --line: rgba(163, 183, 169, 0.14);
+  --line-strong: rgba(163, 183, 169, 0.28);
+  --text-main: #edf1eb;
+  --text-muted: #a3b7a9;
+  --accent: #11543f;
+  --tertiary: #5a1d1c;
 }
 
 html {
@@ -26,8 +24,8 @@ body {
   min-height: 100%;
   color: var(--text-main);
   background:
-    radial-gradient(circle at top, rgba(245, 156, 40, 0.08), transparent 22%),
-    linear-gradient(180deg, #030303 0%, #0a0a0a 55%, #121212 100%);
+    radial-gradient(circle at top, rgba(17, 84, 63, 0.16), transparent 18%),
+    linear-gradient(180deg, #040806 0%, #09100d 55%, #0b1310 100%);
   font-family: var(--font-geist-sans), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -40,7 +38,7 @@ body {
 }
 
 *::selection {
-  background: rgba(245, 156, 40, 0.3);
+  background: rgba(17, 84, 63, 0.36);
 }
 
 a {
