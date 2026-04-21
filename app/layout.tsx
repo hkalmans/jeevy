@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jeevy Fabrication",
+  title: "Jeevy | AI Fabrication Contractor",
   description:
-    "Jeevy helps aerospace and fabrication teams hire qualified welders, machinists, inspectors, and operators faster.",
+    "Jeevy combines fabrication execution, scheduling, QA, and shop automation for aerospace and industrial welded work.",
 };
 
 export default function RootLayout({
