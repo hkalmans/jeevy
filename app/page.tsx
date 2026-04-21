@@ -128,6 +128,7 @@ export default function Home() {
             <a href="#workloads">Workloads</a>
             <a href="#fabrication-data">Fabrication</a>
             <a href="mailto:jeevy@jeevyfabrication.com">Contact</a>
+            <a href="#portal" className={styles.portalButton}>Portal Login</a>
           </nav>
         </header>
 
@@ -139,7 +140,7 @@ export default function Home() {
             </div>
           </div>
 
-          <p className={styles.tagline}>Welding Execution Software on Your Timeline</p>
+          <p className={styles.tagline}>Welding On Your Timeline</p>
 
           <div className={styles.heroButtons}>
             <a href="#product" className={styles.primaryButton}>
@@ -229,14 +230,17 @@ export default function Home() {
       <section className={styles.section}>
         <div className={styles.motionBand}>
           <div className={styles.motionVideo} aria-hidden="true">
-            <iframe
-              src="https://www.youtube.com/embed/yS6gCBurz88?autoplay=1&mute=1&controls=0&loop=1&playlist=yS6gCBurz88&playsinline=1&rel=0&modestbranding=1"
-              title="Welding sparks motion background"
-              allow="autoplay; encrypted-media; picture-in-picture"
-              referrerPolicy="strict-origin-when-cross-origin"
-              loading="lazy"
-              style={{objectFit: 'cover'}}
-            />
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className={styles.backgroundVideo}
+            >
+              <source src="/circle-weld.mp4" type="video/mp4" />
+              <source src="/circle-weld.webm" type="video/webm" />
+              Your browser does not support the video tag.
+            </video>
           </div>
           <div className={styles.motionShade} />
           <div className={styles.motionText}>

@@ -42,7 +42,7 @@
   transform: translate(-50%, -50%);
   pointer-events: none;
   opacity: 0.56;
-  filter: grayscale(0.15) contrast(1.1) brightness(0.42) saturate(0.72);
+  filter: grayscale(0.15) contrast(1.1) brightness(0.7) saturate(0.72);
   object-fit: cover;
 }
 
@@ -98,6 +98,18 @@
 .nav a {
   color: var(--text-muted);
   font-size: 0.86rem;
+}
+
+.portalButton {
+  background-color: var(--tertiary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+}
+
+.portalButton:hover {
+  background-color: #7a2a29;
 }
 
 .heroCenter {
