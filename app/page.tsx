@@ -62,32 +62,32 @@ const offerings = [
 
 const workloads = [
   {
-    icon: "AP",
+    icon: "🔧",
     title: "Aerospace Piping and Skid Assemblies",
     description: "High-consequence piping, fluid systems, and skid builds where cleanliness, spec discipline, and schedule rigor matter.",
   },
   {
-    icon: "CF",
+    icon: "⚙️",
     title: "Custom Engineered Fabrications",
     description: "One-off or specialized fabrications that need stronger coordination than generic job-shop quoting usually provides.",
   },
   {
-    icon: "TD",
+    icon: "📐",
     title: "Tooling Design",
     description: "Manufacturing support equipment and purpose-built tooling for teams trying to move faster without losing control.",
   },
   {
-    icon: "FI",
+    icon: "🏗️",
     title: "Field Fabrication and Install",
     description: "Execution support for on-site industrial work where documentation, sequencing, and communication become critical.",
   },
   {
-    icon: "SM",
+    icon: "🔩",
     title: "Steel Manufacturing",
     description: "Heavier industrial steel work that benefits from better planning, workload visibility, and structured delivery management.",
   },
   {
-    icon: "DC",
+    icon: "🖥️",
     title: "Data Center Engineering & Install",
     description: "Fast-moving infrastructure scopes where schedule clarity and reliable fabrication partners matter materially.",
   },
@@ -111,6 +111,8 @@ export default function Home() {
             title="Welder with sparks flying"
             allow="autoplay; encrypted-media; picture-in-picture"
             referrerPolicy="strict-origin-when-cross-origin"
+            loading="lazy"
+            style={{objectFit: 'cover'}}
           />
         </div>
         <div className={styles.heroShade} />
@@ -232,6 +234,8 @@ export default function Home() {
               title="Welding sparks motion background"
               allow="autoplay; encrypted-media; picture-in-picture"
               referrerPolicy="strict-origin-when-cross-origin"
+              loading="lazy"
+              style={{objectFit: 'cover'}}
             />
           </div>
           <div className={styles.motionShade} />
