@@ -304,7 +304,7 @@ export default function Home() {
         <div className={styles.footerContent}>
           <div className={styles.footerSection}>
             <a href="mailto:jeevy@jeevyfabrication.com">Contacts</a>
-            <a href="#careers">Careers</a>
+            <a href="mailto:careers@jeevyautomation.com">Careers</a>
             <a href="#blog">Blog</a>
             <a href="#customers">Customers</a>
           </div>
