@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://jeevy-sigma.vercel.app'),
   title: "Jeevy Systems | Welding Execution Software",
   description:
     "Jeevy Systems helps industrial teams manage welded work with clearer scheduling, QA visibility, and execution software on their timeline.",
