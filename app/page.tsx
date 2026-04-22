@@ -209,7 +209,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.section} id="workloads">
+      <section className={`${styles.section} ${styles.workloadsSection}`} id="workloads">
         <div className={styles.sectionHeading}>
           <p className={styles.kicker}>Workloads</p>
           <h2>Industrial scopes the product is already positioned to support.</h2>

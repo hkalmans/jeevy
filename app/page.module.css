@@ -400,6 +400,30 @@
   backdrop-filter: blur(10px);
 }
 
+.workloadsSection {
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+  border-radius: 8px;
+}
+
+.workloadsSection h2,
+.workloadsSection h3 {
+  color: #111111;
+}
+
+.workloadsSection p {
+  color: #444444;
+}
+
+.workloadsSection .workloadCard {
+  background: #f8f9fa;
+  border-color: #e0e0e0;
+}
+
+.workloadsSection .workloadCard::before {
+  border-color: rgba(0, 0, 0, 0.05);
+}
+
 .workloadGrid,
 .fabricationGrid {
   display: grid;
